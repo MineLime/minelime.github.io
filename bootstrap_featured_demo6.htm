@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>
+        Tutorials point Bootstrap Examples
+    </title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="http://www.tutorialspoint.com/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="one-page-wonder.css" rel="stylesheet">
+    <style>
+        #t-cards {
+            padding-top: 80px;
+            padding-bottom: 80px;
+            background-color: #345;
+        }
+        /********************************/
+        /*          Panel cards         */
+        /********************************/
+        
+        .panel.panel-card {
+            position: relative;
+            height: 241px;
+            border: none;
+            overflow: hidden;
+        }
+        
+        .panel.panel-card .panel-heading {
+            position: relative;
+            z-index: 2;
+            height: 120px;
+            border-bottom-color: #fff;
+            overflow: hidden;
+            -webkit-transition: height 600ms ease-in-out;
+            transition: height 600ms ease-in-out;
+        }
+        
+        .panel.panel-card .panel-heading img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 1;
+            width: 120%;
+            -webkit-transform: translate3d(-50%, -50%, 0);
+            transform: translate3d(-50%, -50%, 0);
+        }
+        
+        .panel.panel-card .panel-heading button {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            z-index: 3;
+        }
+        
+        .panel.panel-card .panel-figure {
+            position: absolute;
+            top: auto;
+            left: 50%;
+            z-index: 3;
+            width: 70px;
+            height: 70px;
+            background-color: #fff;
+            border-radius: 50%;
+            opacity: 1;
+            -webkit-box-shadow: 0 0 0 3px #fff;
+            box-shadow: 0 0 0 3px #fff;
+            -webkit-transform: translate3d(-50%, -50%, 0);
+            transform: translate3d(-50%, -50%, 0);
+            -webkit-transition: opacity 400ms ease-in-out;
+            transition: opacity 400ms ease-in-out;
+        }
+        
+        .panel.panel-card .panel-body {
+            padding-top: 40px;
+            padding-bottom: 20px;
+            -webkit-transition: padding 400ms ease-in-out;
+            transition: padding 400ms ease-in-out;
+        }
+        
+        .panel.panel-card .panel-thumbnails {
+            padding: 0 15px 20px;
+        }
+        
+        .panel-thumbnails .thumbnail {
+            width: 60px;
+            max-width: 100%;
+            margin: 0 auto;
+            background-color: #fff;
+        }
+        
+        .panel.panel-card:hover .panel-heading {
+            height: 55px;
+            -webkit-transition: height 400ms ease-in-out;
+            transition: height 400ms ease-in-out;
+        }
+        
+        .panel.panel-card:hover .panel-figure {
+            opacity: 0;
+            -webkit-transition: opacity 400ms ease-in-out;
+            transition: opacity 400ms ease-in-out;
+        }
+        
+        .panel.panel-card:hover .panel-body {
+            padding-top: 20px;
+            -webkit-transition: padding 400ms ease-in-out;
+            transition: padding 400ms ease-in-out;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">
+              Toggle navigation
+            </span>
+                    <span class="icon-bar">
+            </span>
+                    <span class="icon-bar">
+            </span>
+                    <span class="icon-bar">
+            </span>
+                </button>
+                
+            </a>
+          </h1>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Full Width Image Header -->
+
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <h1 class="thick-heading">
+        ||Carousel with hover captions Example||
+      </h1>
+
+        <!-- First Featurette -->
+        <div class="featurette" id="about">
+            <!------------------------code---------------start---------------->
+            <section id="t-cards">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3">
+                            <div class="panel panel-default panel-card">
+                                <div class="panel-heading">
+                                    <img src="Mr. Arteminecrafter.png" />
+                                    <button class="btn btn-primary btn-sm" role="button">Follow</button>
+                                </div>
+                                <div class="panel-figure">
+                                    <img class="img-responsive img-circle" src="https://pp.vk.me/c630322/v630322001/31224/hrOVUL1s1Rk.jpg" />
+                                </div>
+                                <div class="panel-body text-center">
+                                    <h4 class="panel-header"><a href="https://twitter.com/artem_lazarev_">Artem Lazarev</a></h4>
+                                    <small>Chef & Developer</small>
+                                </div>
+                               
+                                            
+                                      
+                                    
+                               
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="panel panel-default panel-card">
+                                <div class="panel-heading">
+                                    <img src="" />
+                                    <button class="btn btn-primary btn-sm" role="button">Follow</button>
+                                </div>
+                                <div class="panel-figure">
+                                    <img class="img-responsive img-circle" src="https://abs.twimg.com/sticky/default_profile_images/default_profile_5_400x400.png" />
+                                </div>
+                                <div class="panel-body text-center">
+                                    <h4 class="panel-header"><a href="https://twitter.com/maridlcrmn">Семенюк Никита</a></h4>
+                                    <small>Developer</small>
+                                </div>
+                                
+                            
+            </section>
+
+
+            <!----Code------end----------------------------------->
+        
+        <!-- jQuery -->
+        <script src="http://www.tutorialspoint.com/bootstrap/scripts/jquery.min.js">
+        </script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="http://www.tutorialspoint.com/bootstrap/js/bootstrap.min.js">
+        </script>
+    </div>
+</body>
+
+</html>
